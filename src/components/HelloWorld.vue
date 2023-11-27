@@ -4,43 +4,27 @@ import { reactive, ref, onUnmounted } from "vue";
 defineProps({
   msg: String,
 });
-
-function countinio(str) {
-  return str.split("") + " - " + this.color;
-}
-
-const count = ref(0);
-const count_value = ref(0);
-const styleObj = reactive({
-  color: "blue",
-  fontSize: 30,
-});
-let victoria = "victoria";
-let sett = [...new Set(victoria.split(''))];
-
-const prompromi = new Promise((res, rej) => {
-  res('data');
-})
-prompromi.then((dat)=> console.log(dat));
-console.log(countinio.call(styleObj, "stroka"));
-
-
-
-// onUnmounted(()=>{
-
-// })
 </script>
 
 <template>
   <div>
-    <h2>
-      {{ sett }}
-    </h2>
-    <h1
-      :style="{ 'font-size': +styleObj.fontSize + 'px', color: styleObj.color }"
-    >
-      {{ msg }}
-    </h1>
+    <div class="flex justify-center text-2xl font-serif">
+      <a class="z-10 text-fuchsia-50 px-10 hover:text-yellow-300 hover:bg-blue-800" href="#"><h3>Home</h3></a>
+      <a class="z-10 text-fuchsia-50 px-10  hover:text-yellow-300 hover:bg-blue-800" href="#"><h3>Catalog</h3></a>
+      <a class="z-10 text-fuchsia-50 px-10  hover:text-yellow-300 hover:bg-blue-800" href="#"><h3>About</h3></a>
+      <a class="z-10 text-fuchsia-50 px-10  hover:text-yellow-300 hover:bg-blue-800" href="#"><h3>Korzina</h3></a>
+      <video
+        class="absolute z-1 blur-sm "
+        style="background-video"
+        height="300"
+        width="1000"
+        autoplay
+        loop
+        muted
+      >
+        <source src="/src/assets/zelia11.mp4" type="video/mp4" />
+      </video>
+    </div>
   </div>
 </template>
 
