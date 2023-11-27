@@ -8,11 +8,11 @@ defineProps({
 
 <template>
   <div>
-    <div class="flex justify-center text-2xl font-serif">
+    <div class="flex justify-center text-2xl">
       <a class="z-10 text-fuchsia-50 px-10 hover:text-yellow-300 hover:bg-blue-800" href="#"><h3>Home</h3></a>
       <a class="z-10 text-fuchsia-50 px-10  hover:text-yellow-300 hover:bg-blue-800" href="#"><h3>Catalog</h3></a>
       <a class="z-10 text-fuchsia-50 px-10  hover:text-yellow-300 hover:bg-blue-800" href="#"><h3>About</h3></a>
-      <a class="z-10 text-fuchsia-50 px-10  hover:text-yellow-300 hover:bg-blue-800" href="#"><h3>Korzina</h3></a>
+      <a class="z-10 text-fuchsia-50 px-10  hover:text-yellow-300 hover:bg-blue-800" href="#"><h3>Shopping cart</h3></a>
       <video
         class="absolute z-1 blur-sm "
         style="background-video"
